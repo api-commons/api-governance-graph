@@ -1,0 +1,21 @@
+{
+  "name": "api-governance-graph",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A browser-first tool that binds API governance building blocks — rules, policies, provenance, guidance, experiences, and solutions — into one navigable graph, so you can walk the Guidance Stack from any node and see where it is broken.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "data": "node tools/build-data.mjs"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11"
+  },
+  "dependencies": {
+    "yaml": "^2.6.1"
+  }
+}
