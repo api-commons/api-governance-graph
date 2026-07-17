@@ -13,12 +13,6 @@ When those links exist, governance is legible. When they break — a rule with n
 policy, a policy with no *why*, an essay nobody links — governance is just noise. This
 tool makes the stack, and its breaks, visible.
 
-Part of the [API Commons](https://apicommons.org/tools/) tools, alongside
-[API Validator](https://github.com/api-commons/api-validator),
-[Ruleset Commons](https://github.com/api-commons/ruleset-commons),
-[Spectral Ruleset Studio](https://github.com/api-commons/spectral-ruleset-studio), and
-[Governance Pipeline Auditor](https://github.com/api-commons/governance-pipeline-auditor).
-
 ## Three views
 
 - **Stack** — every node in six columns (Guidance · Policy · Rule · Provenance ·
@@ -70,6 +64,17 @@ change.
 
 Everything runs client-side against the bundled snapshot. Nothing you do here leaves the
 page — there is no server.
+
+## Part of API Commons
+
+An open, browser-first tool from **[API Commons](https://apicommons.org)** — free, no backend, your data stays in your browser. Browse the full set at **[apicommons.org/tools](https://apicommons.org/tools/)**.
+
+**Related tools**
+- [API Validator](https://validator.apicommons.org) — lint OpenAPI/AsyncAPI/Arazzo/JSON Schema in-browser
+- [API Governance MCP](https://github.com/api-commons/api-governance-mcp) — Spectral MCP server
+- [Governance Coverage](https://coverage.apicommons.org) — how much of your API your rules actually check
+- [Governance Scorecard](https://scorecard.apicommons.org) — governance health over time
+- [Ruleset Commons](https://rulesets.apicommons.org) — adopt a provenanced ruleset by reference
 
 ---
 
