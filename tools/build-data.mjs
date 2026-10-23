@@ -26,7 +26,7 @@ const AE = join(GH, 'api-evangelist');
 // The YAML source carries the FULL catalog (all 12 artifact formats, 733 rules);
 // the runtime src/all-rules.json is only the 4 in-browser formats (579). The graph
 // is the whole governance surface, so read the full source of truth.
-const VALIDATOR_RULES = join(COMMONS, 'api-validator', 'rules', 'all-rules.yaml');
+const VALIDATOR_RULES = join(COMMONS, 'common-openlint-validator', 'rules', 'all-rules.yaml');
 
 // ---- helpers ----------------------------------------------------------------
 const slugify = (s) => String(s || '').trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');

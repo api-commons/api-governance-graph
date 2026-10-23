@@ -32,7 +32,7 @@ The graph is assembled at build time from two sources and shipped as a single st
 snapshot (`public/graph-bundle.json`) so the app has no runtime dependencies:
 
 - The **API Commons rule catalog** — the full 769-rule, 12-format ruleset from
-  [`api-validator`](https://github.com/api-commons/api-validator)
+  [`common-openlint-validator`](https://github.com/api-commons/common-openlint-validator)
   (`rules/all-rules.yaml`): id, tags (`format:`/`experience:`/`spec:`/`topic:`/`owasp:`),
   `source` provenance, and `given`/`then`.
 - The **[apievangelist.com](https://apievangelist.com) building blocks** — the
@@ -53,7 +53,7 @@ npm run dev       # local dev server
 npm run build     # production build → dist/
 ```
 
-`npm run data` reads the sibling checkouts (`../api-validator` and
+`npm run data` reads the sibling checkouts (`../common-openlint-validator` and
 `../../api-evangelist/*`) and regenerates the committed
 [`public/graph-bundle.json`](./public/graph-bundle.json). The bundle **is committed**, so
 CI (`.github/workflows/pages.yml`) only runs `npm run build` — it needs no sibling repos
