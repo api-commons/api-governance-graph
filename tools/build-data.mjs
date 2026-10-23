@@ -115,7 +115,7 @@ for (const [format, group] of Object.entries(catalog)) {
 console.log(`  ${ruleCount} rules, ${collisions} id collisions across formats (first kept)`);
 
 function provenanceLabel(s) {
-  return ({ compiled: 'Compiled (recommended)', builtin: 'Built-in (Spectral)', default: 'Default ruleset', spotlight: 'Spotlight-recommended', unknown: 'Unspecified' })[s] || titleCase(s);
+  return ({ compiled: 'Compiled (recommended)', builtin: 'Built-in (Spectral)', default: 'Default ruleset', 'api-commons': 'API Commons', unknown: 'Unspecified' })[s] || titleCase(s);
 }
 function titleCase(s) { return String(s).replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()); }
 

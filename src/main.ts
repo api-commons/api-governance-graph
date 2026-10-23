@@ -83,7 +83,7 @@ function renderStack() {
 function sortColumn(kind: Kind, nodes: GNode[]): GNode[] {
   const copy = [...nodes];
   if (kind === 'lifecycle') return copy.sort((a, b) => (a.meta.order ?? 999) - (b.meta.order ?? 999));
-  if (kind === 'provenance') { const ord = ['compiled', 'default', 'builtin', 'spotlight', 'unknown']; return copy.sort((a, b) => ord.indexOf(a.slug) - ord.indexOf(b.slug)); }
+  if (kind === 'provenance') { const ord = ['compiled', 'default', 'builtin', 'api-commons', 'unknown']; return copy.sort((a, b) => ord.indexOf(a.slug) - ord.indexOf(b.slug)); }
   if (kind === 'experience') return copy.sort((a, b) => graph.incoming(b.id).length - graph.incoming(a.id).length);
   return copy.sort((a, b) => a.label.localeCompare(b.label));
 }
